@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #010101;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #020000;
+  color: rgb(255, 255, 255);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.address {
+    white-space: pre-line;
+            margin-bottom: 20px;
+        }
+
+/* Style the footer */
+.footer {
+  background-color: #858585;
+  padding: 10px;
+  text-align: center;
+  color:#e0e0e0
+}
+
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid, adjust as needed */
+            grid-gap: 20px; /* Adjust the gap between grid items as needed */
+        }
+
+        .grid-item {
+            background-color: #0a0b0b; /* Set background color or add content as needed */
+            padding: 20px; /* Adjust padding as needed */
+            text-align: center;
+        }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><strong> About Spotify</strong></h1>
+  
+</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <h2>About Us</h2>
+    <p>
+        With Spotify, it’s easy to find the right music or podcast for every moment – on your phone, your computer, your tablet and more.
+        
+        There are millions of tracks and episodes on Spotify. So whether you’re behind the wheel, working out, partying or relaxing, the right music or podcast is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you.
+        
+        You can also browse through the collections of friends, artists, and celebrities, or create a radio station and just sit back.
+        
+        Soundtrack your life with Spotify. Subscribe or listen for free.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Customer Service and Support</h2>
+    <p>
+        Help site. Check out our help site for answers to your questions and to learn how to get the most out of Spotify and your music.
+        Community. Get fast support from expert Spotify users. If there isn’t already an answer there to your question, post it and someone will quickly answer. You can also suggest and vote on new ideas for Spotify or simply discuss music with other fans.
+        Contact us. Contact our Customer Support if you don’t find a solution on our support site or Community.
+        @SpotifyCares. Feeling sociable? Simply tweet the team and they’ll do all they can to help.
+        Audiobook refunds. If you’ve listened to less than 50% of an audiobook purchased in the last 7 days, you may be eligible for a refund. Check out our policy for details.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Or Pick a Topic</h2>
+    <p>Advertising on Spotify? 
+        Advertisers section
+        Press query? Press section
+        Applying for a job?
+        Jobs section
+        Spotify USA, Inc. provides the Spotify service to users in the United States. Spotify AB provides the Spotify service to users in all other markets.</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <h2><strong>Spotify around the world</strong></h2>
+
+    <body>
+      <div class="grid-container">
+        <div class="grid-item">Spotify Belgium
+                  Square de Meeus 37
+                  4th floor
+                  1000 Brussels
+                  Belgium
+                  office@spotify.com</div>
+        <div class="grid-item"> Spotify GmbH
+                  Unter den Linden 10
+                  10117 Berlin
+                  Germany
+                  office@spotify.com</div>
+        <div class="grid-item">Spotify GmbH
+                  Unter den Linden 10
+                  10117 Berlin
+                  Germany
+                  office@spotify.com</div>  
+        <div class="grid-item">SPOTIFY SPAIN SL
+          Paseo de Recoletos, 7-9
+          28004 Madrid
+          Spain
+          office@spotify.com</div>
+        <div class="grid-item">Spotify Finland Oy
+          Merimiehenkatu 36 D
+          FI-00150 Helsinki
+          Finland
+          office@spotify.com</div>
+        <div class="grid-item">Spotify France SAS
+          48 Rue la Bruyère
+          75009
+          Paris
+          France
+          office@spotify.com</div>  
+      </div>
+    </body>
+
+

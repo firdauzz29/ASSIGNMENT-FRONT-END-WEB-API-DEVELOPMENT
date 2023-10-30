@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Search</title>
+    <!-- Add the Bootstrap CSS CDN link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0b0b;
+            color: #fff;
+        }
+
+        #search-container {
+            background-color: #161515;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        label {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #search-results {
+            background-color: #161515;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        #search-results h2 {
+            color: #fff;
+        }
+
+        #search-results ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #search-results li {
+            margin-bottom: 10px;
+        }
+
+        #search-results a {
+            text-decoration: none;
+            color: #1DB954;
+        }
+
+        .upload-button {
+            background-color: #1DB954;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .upload-button:hover {
+            background-color: #0f8138;
+        }
+
+        .album-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .album-image {
+            margin: 10px 0;
+            width: 100%; /* Set each album image to take 100% width within the container */
+        }
+
+        .gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        .gallery:hover {
+            border: 1px solid #777;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery .desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #858585;
+            padding: 10px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Music Search</h1>
+        <div id="search-container">
+            <form action="search-results.html" method="get">
+                <div class="form-group">
+                    <label for="search">Search for music:</label>
+                    <input type="text" id="search" name="q" class="form-control" placeholder="Enter keywords..." required>
+                </div>
+                <button type="submit" class="btn btn-success">Search</button>
+            </form>
+        </div>
+        <div id="search-results">
+            <h2>Search Results:</h2>
+            <ul>
+                <li><a href="#">Linkin Park In The End</a></li>
+                <li><a href="#">One Direction Midnight Memories</a></li>
+                <li><a href="#"></a></li>
+                <!-- Add more search results as needed -->
+            </ul>
+        </div>
+        <div class="album-container">
+           
+            <div class="gallery">
+                <a href="/assets/michele jackson.jpeg">
+                    <img src="/assets/michele jackson.jpeg" alt="Michael Jackson" class="img-fluid">
+                </a>
+                <div class="desc">Michael Jackson - Most Memorable Album</div>
+            </div>
+            <div class="gallery">
+                <a href="/assets/gracie yates.jpeg">
+                    <img src="/assets/gracie yates.jpeg" alt="Gracie Yates" class="img-fluid">
+                </a>
+                <div class="desc">Gracie Yates</div>
+            </div>
+            <div class="gallery">
+                <a href="/assets/eminem.webp">
+                    <img src="/assets/eminem.webp" alt="Eminem" class="img-fluid">
+                </a>
+                <div class="desc">Eminem - Curtain Call</div>
+            </div>
+            <div class="gallery">
+                <a href="/assets/justin.jpg">
+                    <img src="/assets/justin.jpg" alt="Justin Bieber" class="img-fluid">
+                </a>
+                <div class="desc">Justin Bieber</div>
+
+            </div>
+            <div class="gallery">
+                <a href="/assets/taylor s.jpg">
+                    <img src="/assets/taylor s.jpg" alt="Justin Bieber" class="img-fluid">
+                </a>
+                <div class="desc">Taylor Swift</div>
+            
+        
+    </div>
+    <!-- Add the Bootstrap JS and Popper.js CDN links at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<html></html>

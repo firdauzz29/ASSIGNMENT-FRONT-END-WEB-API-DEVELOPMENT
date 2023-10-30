@@ -1,0 +1,15 @@
+/* Apply styles to the header */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    width:100%;
+    height:vh;
+    background-image: url(src/app/home-page/band.jpg);
+    background-position-x: center;
+    background-size: cover;
+    position: relative;
+}
